@@ -28,7 +28,7 @@ spec:
       containers:
       - name: devops-dashboard
 
-        image: YOUR_DOCKERHUB_USERNAME/devops-dashboard:v1
+        image: sejalkatre/devops-dashboard:v1
 
         imagePullPolicy: Always
 
