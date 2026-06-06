@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: devops-dashboard
   namespace: dev
@@ -25,6 +26,9 @@ spec:
         app: devops-dashboard
 
     spec:
+      imagePullSecrets:
+      - name: dockerhub-secret
+
       containers:
       - name: devops-dashboard
 
