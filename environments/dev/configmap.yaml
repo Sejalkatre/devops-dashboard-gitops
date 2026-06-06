@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dashboard-config
+  namespace: dev
+data:
+  APP_NAME: "DevOps Dashboard"
+  ENVIRONMENT: "Development"
+  COMPANY: "Internship Project"
