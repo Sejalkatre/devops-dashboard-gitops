@@ -12,15 +12,12 @@ spec:
     name: devops-dashboard
 
   minReplicas: 2
-
-  maxReplicas: 10
+  maxReplicas: 6   # keep small for demo
 
   metrics:
   - type: Resource
-
     resource:
       name: cpu
-
       target:
         type: Utilization
-        averageUtilization: 50
+        averageUtilization: 10   # 🔥 LOWERED FOR DEMO
