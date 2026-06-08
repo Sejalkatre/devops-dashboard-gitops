@@ -32,7 +32,7 @@ spec:
       containers:
       - name: devops-dashboard
 
-        image: sejalkatre/devops-dashboard:
+        image: sejalkatre/devops-dashboard:v1
 
         imagePullPolicy: Always
 
