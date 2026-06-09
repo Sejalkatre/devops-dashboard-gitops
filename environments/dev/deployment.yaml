@@ -33,7 +33,7 @@ spec:
 
       containers:
         - name: devops-dashboard
-          image: sejalkatre/devops-dashboard:v0-3-f6d3550
+          image: sejalkatre/devops-dashboard:v0-4-33e6dcf
           imagePullPolicy: Always
 
           ports:
