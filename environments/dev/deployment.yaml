@@ -33,7 +33,7 @@ spec:
 
       containers:
         - name: devops-dashboard
-          image: sejalkatre/devops-dashboard:feature-docker-17-91afc2b
+          image: sejalkatre/devops-dashboard:dev-3-10a887d
           imagePullPolicy: Always
 
           ports:
