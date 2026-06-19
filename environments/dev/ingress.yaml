@@ -2,20 +2,25 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 
 metadata:
-  name: devops-dashboard-ingress
-  namespace: dev
+name: devops-dashboard-ingress
+namespace: dev
 
 spec:
-  ingressClassName: nginx
+ingressClassName: nginx
 
-  rules:
-  - host: dashboard.local
-    http:
-      paths:
+rules:
+- host: dashboard.local
+
+```
+  http:
+    paths:
       - path: /
         pathType: Prefix
+
         backend:
           service:
             name: devops-dashboard-service
+
             port:
               number: 80
+```
